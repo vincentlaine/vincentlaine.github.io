@@ -1,0 +1,233 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.row .col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    padding:0px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    margin: 0.5rem 0 1rem 0;
+    margin-top: 0rem;
+    margin-right: 0px;
+    margin-bottom: 0rem;
+    margin-left: 0px;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+.full-height{
+	height:100%;
+}
+
+.full-width{
+	width:100%;
+}
+
+.div-profile{
+	height:25%;
+}
+
+.prenom{
+	font-size:2em;
+	font-weight: 100;
+	color:#FFFFFF;
+}
+
+.profession{
+	font-size:0.75em;
+	font-weight: 100;
+}
+
+.profession2{
+	font-size:0.75em;
+	font-weight: 100;
+}
+
+.button-menu{
+	width:100%;
+	height:40px;
+	color:#8A8888;
+	font-size: 1.1em;
+	font-weight:bold;
+}
+
+.buttons-menu{
+	margin-top:20px;
+}
+
+.header{
+	margin-right:5px;
+}
+
+.icon-menu{
+	margin-right:10px;
+	margin-left:7%;
+}
+
+.icon-menu-small{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.active{
+	border-right: 2px solid #8bc34a;
+}
+
+.fixed-action-btn.active{
+	border:none;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid #8bc34a;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: rgb(139, 195, 74);
+}
+
+.first-header{
+	color:#8A8888;
+}
+
+.header{
+	color:#FFFFFF;
+}
+
+.icon-profile{
+	margin-right:15px;
+	color:#8bc34a;
+}
+
+.menu{
+	position: fixed;
+}
+
+.main-infos{
+	margin-left:16.6%;
+}
+
+@media only screen and (min-width: 993px)
+.row .col.l10 {
+    width: 83.33333%;
+    margin-left:16.6%;
+}
+
+.row .col.s11 {
+    width: 91.66667%;
+    margin-left: 16.6%;
+}
+
+.main-section{
+	background-color:#8bc34a;
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:50px;
+	padding-bottom:20px;
+}
+
+.container{
+	width:80%;
+}
+
+.card-header{
+	height:4em;
+	margin-left: 10px;
+}
+
+.img-header{
+	height:80%;
+	margin-left:1%;
+	padding-right:2%;
+	border-right: 1px solid rgba(138, 136, 136, 0.4);;
+    border-right-style: solid;
+}
+
+.date{
+	font-weight: lighter;
+	position: absolute;
+    right: 10px;
+    margin-top: 0.7rem;
+}
+
+.font-thin{
+	font-weight: lighter;
+}
+
+.card-sub-header{
+	margin-right:10px;
+	font-weight: 600;
+}
+
+li {
+	list-style-type:none;
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+li.red-list:before {
+    content: "• ";
+    color: red; /* or whatever color you prefer */
+}
+
+li.green-list:before {
+    content: "• ";
+    color: green; /* or whatever color you prefer */
+}
+
+li.purple-list:before {
+    content: "• ";
+    color: purple; /* or whatever color you prefer */
+}
+
+li.blue-list:before {
+    content: "• ";
+    color: blue; /* or whatever color you prefer */
+}
+
+li.yellow-list:before {
+    content: "• ";
+    color: yellow; /* or whatever color you prefer */
+}
+
+.img-wrap{
+	height: 120px;
+    text-align: center;
+    float: left;
+    margin-right:25px;
+    margin-left:25px;
+}
+
+.logo-skills{
+	height: 70%;
+}
+
+.card-skill{
+	margin-top:20px;
+}
