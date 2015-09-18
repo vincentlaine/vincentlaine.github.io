@@ -133,15 +133,18 @@ blockquote {
 	margin-left:16.6%;
 }
 
-@media only screen and (min-width: 993px)
-.row .col.l10 {
-    width: 83.33333%;
-    margin-left:16.6%;
+@media only screen and (min-width: 993px){
+	.row .col.l10 {
+	    width: 83.33333%;
+	    margin-left:16.6%;
+	}
 }
 
-.row .col.s11 {
-    width: 91.66667%;
-    margin-left: 16.6%;
+@media only screen and (max-width: 993px){
+	.row .col.s11 {
+	    width: 91.66667%;
+	    margin-left: 8.3%;
+	}
 }
 
 .main-section{
@@ -230,4 +233,10 @@ li.yellow-list:before {
 
 .card-skill{
 	margin-top:20px;
+}
+
+.card-description{
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
