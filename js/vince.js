@@ -11,7 +11,10 @@ function init(){
     	$('.modal-trigger').leanModal();
 
     	var left;
-		left = ($(".header-div").width()/2 - 507.516/2);
+		left = ($(".header-div").width()/2 - $('#header-info').width()/2);
+		console.log($(".header-div").width()/2);
+		console.log($('#header-info').width()/2);
+		console.log(left);
 	    $('#header-info').css("left", left);
 	});
 

@@ -85,6 +85,10 @@ nav ul a:hover {
 	color: #8bc34a;
 }
 
+nav a {
+    color: #4c404d;
+}
+
 .active {
 	color: #8bc34a;
 }
