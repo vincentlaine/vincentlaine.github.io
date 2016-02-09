@@ -9,13 +9,13 @@ function init(){
 	$(document).ready(function(){
 		$('.scrollspy').scrollSpy({offset: 100});
     	$('.modal-trigger').leanModal();
+
+    	var left;
+		left = ($(".header-div").width()/2 - 507.516/2);
+	    $('#header-info').css("left", left);
 	});
 
 	$(".button-collapse").sideNav();
-
-	var left;
-	left = ($(".header-div").width()/2 - $('#header-info').width()/2);
-    $('#header-info').css("left", left);
 };
 
 window.onresize = function(event) {
