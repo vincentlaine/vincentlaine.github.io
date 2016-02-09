@@ -159,6 +159,10 @@ p, span, .node text {
     padding-bottom: 50px;
 }
 
+.modal-content{
+  color:#3b323c;
+}
+
 .wpf-demo-6 {
   background-color: transparent;
   display: block;
