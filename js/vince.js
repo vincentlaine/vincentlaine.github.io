@@ -12,10 +12,18 @@ function init(){
 	});
 
 	$(".button-collapse").sideNav();
+
+	var left;
+	left = ($(".header-div").width()/2 - $('#header-info').width()/2);
+    $('#header-info').css("left", left);
 };
 
 window.onresize = function(event) {
 	$(".header-div").css("height", ($(window).height()-120));
+
+	var left;
+	left = ($(".header-div").width()/2 - $('#header-info').width()/2);
+	$('#header-info').css("left", left);
 };
 
 window.onscroll = function () {

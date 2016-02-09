@@ -1,6 +1,59 @@
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	line-height: 38px;
+	padding-bottom: 0px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0px;
+	border-bottom: #8bc34a 6px solid;
+	padding-bottom: 9px;
+	display: inline-block;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 21px;
+	padding-bottom: 3px;
+	font-weight: 400;
+	margin: 0px;
+}
+
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	line-height: 24px;
+	padding-bottom: 6px;
+	font-weight: 600;
+	margin: 0px;
+	color: #5b4c5c;
+}
+
+p, span, .node text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 27px;
+	font-weight: 400;
+	padding-bottom: 30px;
+	margin: 0px;
+}
+
 .header-div{
 	overflow:hidden;
 	background-color: #F3F2F3;
+}
+
+.header-div h2 { 
+   position: absolute; 
+   top: 200px;
+   padding:0px;
+   border:0px;
+   font-size:20px;
+}
+
+.header-div .cv-btn{
+	background-color:#F3F2F3;
 }
 
 @media only screen and (min-width: 601px){
@@ -52,47 +105,6 @@ nav ul a:hover {
 
 .about-img img{
 	width: 100%;
-}
-
-h2 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 36px;
-	line-height: 38px;
-	padding-bottom: 0px;
-	font-weight: 400;
-	text-transform: uppercase;
-	margin: 0px;
-	border-bottom: #8bc34a 6px solid;
-	padding-bottom: 9px;
-	display: inline-block;
-}
-
-h3 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	line-height: 21px;
-	padding-bottom: 3px;
-	font-weight: 400;
-	margin: 0px;
-}
-
-h4 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 19px;
-	line-height: 24px;
-	padding-bottom: 6px;
-	font-weight: 600;
-	margin: 0px;
-	color: #5b4c5c;
-}
-
-p, span, .node text {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	line-height: 27px;
-	font-weight: 400;
-	padding-bottom: 30px;
-	margin: 0px;
 }
 
 #more h3{
