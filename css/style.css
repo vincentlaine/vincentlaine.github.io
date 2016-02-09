@@ -163,6 +163,10 @@ p, span, .node text {
   color:#3b323c;
 }
 
+.modal-content h4{
+    border-bottom: #8bc34a 2px solid;
+}
+
 .wpf-demo-6 {
   background-color: transparent;
   display: block;
