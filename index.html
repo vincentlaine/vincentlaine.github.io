@@ -1,503 +1,412 @@
 <!DOCTYPE html>
-<html lang="en" class="full-height">
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Vincent Lainé</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Vincent Lainé</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body class="full-height">
-  <!-- Page Layout here -->
-    <div class="row full-height">
+<body>
+	<header>
+		<div id ="home" class="header-div scrollspy">
+			<img class="header-img" src="img/header-bg1.jpg"/>
+		</div>
+		<div id="nav-div">
+			<nav class="white" role="navigation">
+				<div class="nav-wrapper container">
+					<ul class="hide-on-med-and-down">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#more">More</a></li>
+						<li><a href="#contact">Contact</a></li>
 
-      <div class="full-height card col s1 l2 menu"> 
-	      <div class="hide-on-med-and-down full-height"> <!-- Menu Computer -->
-	      	<div class="div-profile light-green valign-wrapper">
-	      		<div class="valign right-align full-width header">
-		      		<div class="prenom">Vincent <strong>Lainé</strong></div>
-		      		<br>
-		      		<div class="profession">Computer Engineer</div>
-		      		<div class="profession2">Smart-grid, cities</div>
-	      		</div>
-	      	</div>
-	      	<div class="buttons-menu">
-	      		<div class="divider"></div>
-				<a href="#main-profile" class="waves-effect waves-red button-menu">
-					<div class="menu valign-wrapper">
-						<i class="icon-menu mdi-social-person red-text accent-2 small"></i>
-						<div class"valign">Profile</div>
+					</ul>
+
+					<ul id="nav-mobile" class="side-nav">
+						<li><a href="#">Navbar Link</a></li>
+					</ul>
+					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section id="about" class="scrollspy">
+		<div class="row no-margin">
+			<div class="about-img no-padding col s12 m5 l3">
+				<img src="img/me.jpg"/>
+			</div>
+			<div class="col s12 m7 l9 about-content">
+				<div class="about-heading">
+					<h2>About me</h2>
+				</div>
+				<h3>Vincent Lainé</h3>
+				<h4>Computer Engineer from France</h4>
+				<span>
+					<p>I am currently in my last year of engineering studies in the University of Technology of Compiegne in the Computer Science department.</p>
+					<p>I am a reactive and ambitious person who likes fully investing myself in projects to make improvements. I have developed with my projects (schools or associations) a mature and responsible approach to challenges and problems.</p>
+					<p>I like to have a global approach of the projet and work in team to reach our goals in time.</p>
+				</span>
+				<a href="CV-e.pdf" class="cv-btn" download>Download Printable Resume</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills" class="scrollspy">
+		<div class="container full-width">
+			<div class="center skills-heading">
+				<h2>My skills</h2>
+			</div>
+			<canvas id="sitemap" width="800" height="400"></canvas>
+		</div>
+	</section>
+
+	<section id="work" class="scrollspy">
+		<div class="container">
+			<div class="center work-heading">
+				<h2>Work Experience</h2>
+			</div>
+		</div>
+
+		<div id="cd-timeline" class="cd-container">
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-picture valign-wrapper">
+					<img src="img/logoDecodd.png" alt="Picture">
+				</div> <!-- cd-timeline-img -->
+
+				<div id="block1" class="card-panel cd-timeline-content">
+					<h2>Decodd</h2>
+					<p>Development of a decision tool for the calculation of sports bets odds<br> 
+						- Database management (oracle SQL), server (C ++), development of human machine interface (Java).<br>
+						- Development of a mobile version of the tool using a javascript framework (ExtJS / Sencha Touch), php and mysql.</p>
+					<span class="cd-date">Feb - Jul 2015</span>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img big cd-picture valign-wrapper">
+					<img src="img/utc-logo.png" alt="Picture">
+				</div> <!-- cd-timeline-img -->
+
+				<div class="card-panel cd-timeline-content">
+					<h2>UTC</h2>
+					<p>Development of a web tool for the INSEP (National Institute of Sport and Physical Education)<br>
+						- Database management (mySQL)<br>
+						- Web technologies (HTML, PHP, JavaScript, AJAX, CSS)</p>
+					<span class="cd-date">Feb 2016</span>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img big cd-movie valign-wrapper">
+					<img src="img/logoUTE.png" alt="Movie">
+				</div> <!-- cd-timeline-img -->
+
+				<div class="card-panel cd-timeline-content">
+					<h2>UTE Norte Fluminense</h2>
+					<p>Communication in a Brazilian company with several subsidiaries. This company is based on Rio de Janeiro, Brasil<br>
+						- Translation of mails from Brazilian to English.<br>
+						- Communication with the parent company, EDF.</p>
+					<span class="cd-date">Jul 2012</span>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img big cd-picture valign-wrapper">
+					<img src="img/logoEDF.png" alt="Picture">
+				</div> <!-- cd-timeline-img -->
+
+				<div class="card-panel cd-timeline-content">
+					<h2>EDF</h2>
+					<p>Summer Job in EDF at the Malakoff office (near Paris)<br>
+						- Realisations of facilities plans for the future Flamanville nuclear power plant.<br>
+						- Data checks between EDF and Areva.</p>
+					<span class="cd-date">Jul 2011</span>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+		</div> <!-- cd-timeline -->
+	</section>
+
+	<section id ="projects" class="scrollspy">
+		<div class="container">
+			<div class="center projects-heading">
+				<h2>My projects</h2>
+			</div>
+			<div class="row">
+				<div class="col s12 m6 l4">
+					<figure class="wpf-demo-6">
+						<img class="responsive-img" src="img/linkedbyskills.jpg">
+						<a href="#linkedbyskills" class="modal-trigger"><figcaption class="view-caption center">
+							<h4>LinkedBySkills</h4> 
+							<span class="fa fa-plus fa-2x"></span>
+						</figcaption></a>
+					</figure>
+				</div>
+
+				<!-- Modal Structure -->
+				<div id="linkedbyskills" class="modal">
+					<div class="modal-content">
+						<h4>Modal Header</h4>
+						<p>A bunch of text</p>
 					</div>
-				</a>
-				<div class="divider"></div>
+				</div>
 
-    			<a href="#experience-section" class="waves-effect waves-purple button-menu">
-	    			<div class="menu valign-wrapper">
-	    				<i class="icon-menu mdi-action-history purple-text accent-2 small"></i>
-	    				<div class"valign">Experience</div>
-	    			</div>
-    			</a>
-    			<div class="divider"></div>
+				<div class="col s12 m6 l4">
+					<figure class="wpf-demo-6">
+						<img class="responsive-img" src="img/pic.jpg">
+						<a href="#picasso" class="modal-trigger"><figcaption class="view-caption center">
+							<h4>Pic'Asso</h4> 
+							<span class="fa fa-plus fa-2x"></span>
+						</figcaption></a>
+					</figure>
+				</div>
 
-    			<a href="#projects-section" class="waves-effect waves-green button-menu">
-    				<div class="menu valign-wrapper">
-    					<i class="icon-menu mdi-av-web green-text accent-2 small"></i>
-    					<div class"valign">Projects</div>
-    				</div>
-    			</a>
-    			<div class="divider"></div>
+				<!-- Modal Structure -->
+				<div id="picasso" class="modal">
+					<div class="modal-content">
+						<h4>Modal Header</h4>
+						<p>A bunch of text</p>
+					</div>
+				</div>
 
-    			<a href="#skill-section" class="waves-effect waves-teal button-menu">
-    				<div class="menu valign-wrapper">
-    					<i class="icon-menu mdi-av-equalizer blue-text accent-2 small"></i>
-    					<div class"valign">Skills</div>
-    				</div>
-    			</a>
-    			<div class="divider"></div>
+				<div class="col s12 m6 l4">
+					<figure class="wpf-demo-6">
+						<img class="responsive-img" src="img/nf.jpg">
+						<a href="#nuitfauve" class="modal-trigger"><figcaption class="view-caption center">
+							<h4>Nuit Fauve</h4> 
+							<span class="fa fa-plus fa-2x"></span>
+						</figcaption></a>
+					</figure>
+				</div>
 
-    			<a href="#education-section" class="waves-effect waves-yellow button-menu">
-    				<div class="menu valign-wrapper">
-    					<i class="icon-menu mdi-social-school amber-text darken-3 small"></i>
-    					<div class"valign">Education</div>
-    				</div>
-    			</a>
-    			<div class="divider"></div>
-	      	</div>
-	      </div>
+				<!-- Modal Structure -->
+				<div id="nuitfauve" class="modal">
+					<div class="modal-content">
+						<h4>Modal Header</h4>
+						<p>A bunch of text</p>
+					</div>
+				</div>
 
-	      <div class="hide-on-large-only full-height"> <!-- Menu Smartphone -->
-		      <div>
-					<a href="#main-profile" class="waves-effect waves-red button-menu">
-						<div class="menu valign-wrapper full-width">
-							<i class="icon-menu-small mdi-social-person red-text accent-2 small center-align"></i>
+				<div class="col s12 m6 l4">
+					<figure class="wpf-demo-6">
+						<img class="responsive-img" src="img/nf.jpg">
+						<a href="#other" class="modal-trigger"><figcaption class="view-caption center">
+							<h4>Others</h4> 
+							<span class="fa fa-plus fa-2x"></span>
+						</figcaption></a>
+					</figure>
+				</div>
+
+				<!-- Modal Structure -->
+				<div id="other" class="modal">
+					<div class="modal-content">
+						<h4>Modal Header</h4>
+						<p>A bunch of text</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="education" class="scrollspy">
+		<div class="container">
+			<div class="center education-heading">
+				<h2>Education</h2>
+			</div>
+		</div>
+
+		<div id="cd-timeline" class="cd-container">
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img big cd-picture valign-wrapper">
+					<img src="img/utc-logo.png" alt="Picture">
+				</div> <!-- cd-timeline-img -->
+
+				<div class="card-panel cd-timeline-content">
+					<h2>UTC</h2>
+					<p>Engineering school in Compiegne, France. General formation from 2011 to 2013 and Computer Science since 2013 with speciality in Smart-cities.</p>
+					<span class="cd-date">2011 - 2016</span>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img big cd-movie valign-wrapper">
+					<img src="img/kadir-logo.png" alt="Movie">
+				</div> <!-- cd-timeline-img -->
+
+				<div class="card-panel cd-timeline-content">
+					<h2>Kadir Has University</h2>
+					<p>Erasmus semester in Instanbul, Turkey, at Kadir Has University in Computer Science.</p>
+					<span class="cd-date">Feb - Jun 2016</span>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img big cd-picture valign-wrapper">
+					<img src="img/sje-logo.png" alt="Picture">
+				</div> <!-- cd-timeline-img -->
+
+				<div class="card-panel cd-timeline-content">
+					<h2>Sainte Jeanne Elisabeth</h2>
+					<p>Highschool scientific degree.</p>
+					<span class="cd-date">2008 - 2011</span>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+		</div> <!-- cd-timeline -->
+	</section>
+
+	<section id="more" class="scrollspy">
+		<div class="container">
+			<div class="center other-heading">
+				<h2>Other Stuff</h2>
+			</div>
+
+			<div class="row no-margin">
+				<div class="row no-margin center">
+					<h3>Languages</h3>
+				</div>
+				<div class="row no-margin center">
+					<div class="col s6 m3">
+						<div class="row no-margin center">
+							<!-- HTML Chart -->
+							<figure class="chart" data-percent="100">
+								<figcaption></figcaption>
+								<p class="french">French</p>
+								<svg width="200" height="200">
+									<circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+								</svg>
+							</figure>
 						</div>
-					</a>
-					<div class="divider"></div>
-
-	    			<a href="#experience-section" class="waves-effect waves-purple button-menu">
-		    			<div class="menu valign-wrapper full-width">
-		    				<i class="icon-menu-small mdi-action-history purple-text accent-2 small center-align"></i>
-		    			</div>
-	    			</a>
-	    			<div class="divider"></div>
-
-	    			<a href="#projects-section" class="waves-effect waves-green button-menu">
-	    				<div class="menu valign-wrapper full-width">
-	    					<i class="icon-menu-small mdi-av-web green-text accent-2 small"></i>
-	    				</div>
-	    			</a>
-	    			<div class="divider"></div>
-
-	    			<a href="#skill-section" class="waves-effect waves-teal button-menu">
-	    				<div class="menu valign-wrapper full-width">
-	    					<i class="icon-menu-small mdi-av-equalizer blue-text accent-2 small"></i>
-	    				</div>
-	    			</a>
-	    			<div class="divider"></div>
-
-	    			<a href="#education-section" class="waves-effect waves-yellow button-menu">
-	    				<div class="menu valign-wrapper full-width">
-	    					<i class="icon-menu-small mdi-social-school amber-text darken-3 small"></i>
-	    				</div>
-	    			</a>
-	    			<div class="divider"></div>
-		      	</div>
-		      </div>
-	      </div>
-
-	      <!-- Main Page -->
-	      <div class="col s11 l10 main-infos" id="main-div">
-	      	<div class="section scrollspy valign-wrapper" id="main-profile">
-		  		<div class="container full-height valign">
-		    		<div class="row">
-				        <h1 class="first-header center-on-small-only">Vincent Lainé</h1>
-				        <blockquote>
-				        	<div class="valign-wrapper"> 
-				        		<i class="small material-icons icon-profile">local_phone</i>
-	    						<div class"">+33 6 69 98 69 40</div>
-	    					</div>
-	    					<br>
-	    					<div class="valign-wrapper"> 
-				        		<i class="small material-icons icon-profile">mail</i>
-	    						<div class"">vincent.laine.utc@gmail.com</div>
-	    					</div>
-	    					<br>
-	    					<div class="valign-wrapper"> 
-				        		<i class="small material-icons icon-profile">home</i>
-	    						<div class"">Compiègne, France</div>
-	    					</div>
-				        </blockquote>
-		    		</div>
-		  		</div>
-			</div>
-			<div class="section scrollspy" id="experience-section">
-				<div class="full-width main-section">
-					<h1 class="header center-on-small-only">Experience</h1>
-				</div>
-				<br>
-		  		<div class="container">
-			        <div class="card">
-			       		<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/logoDecodd.png">
-			        		<h3 class="first-header date">2015</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align red-text">
-			        		<span class="">Assistant Engineer</span>
-			        	</div>
-			        	<div class="card-description">
-			        		Development of a decision tool for the calculation of sports bets odds.
-					        <li class="red-list">
-					            Database management (SQL), server (C ++), development of human machine interface (Java).
-					        </li>
-					        <li class="red-list">
-					            Development of a mobile version of the tool using a javascript framework (ExtJS / Sencha Touch), php and mysql.
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/logoUTE.png">
-			        		<h3 class="first-header date">2012</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align green-text">
-			        		<span class="">Intra-company Communication</span>
-			        	</div>
-			        	<div class="card-description">
-			        		Communication in a Brazilian company with several subsidiaries. This company is based on Rio de Janeiro, Brasil.
-					        <li class="green-list">
-					            Translation of mails from Brazilian to English.
-					        </li>
-					        <li class="green-list">
-					            Communication with the parent company, EDF.
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/logoEdf.png">
-			        		<h3 class="first-header date">2011</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align purple-text">
-			        		<span class="">Data Checking</span>
-			        	</div>
-			        	<div class="card-description">
-			        		Summer Job in EDF at the Malakoff office (near Paris).
-					        <li class="purple-list">
-					            Realisations of facilities plans for the future Flamanville nuclear power plant.
-					        </li>
-					        <li class="purple-list">
-					            Data checks between EDF and Areva.
-					        </li>
-			        	</div>
-			        </div>
-		    	</div>
-			</div>
-			<div class="section scrollspy" id="projects-section">
-		  		<div class="full-width main-section">
-					<h1 class="header center-on-small-only">Projects</h1>
-				</div>
-				<br>
-		  		<div class="container">
-			        <div class="card">
-			       		<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/led-logo.png">
-			        		<h3 class="first-header date">2015 - Today</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align red-text">
-			        		<span class="">L.E.D Engineering</span>
-			        	</div>
-			        	<div class="card-description">
-			        		blabla
-					        <li class="red-list">
-					            Improved customer sales and company reputation, by providing rich stationary designs.
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/.png">
-			        		<h3 class="first-header date">2015 - Today</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align green-text">
-			        		<span class="">Projet TX ou BA04 ou BA05, à voir</span>
-			        	</div>
-			        	<div class="card-description">
-			        		blabla
-					        <li class="green-list">
-					            Improved customer sales and company reputation, by providing rich stationary designs.
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/gestapic-logo.png">
-			        		<h3 class="first-header date">2015</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align purple-text">
-			        		<span class="">Web Tracker</span>
-			        	</div>
-			        	<div class="card-description">
-			        		Development of a computer tool to detect fraud of the students to our students office.
-					        <li class="purple-list">
-					            Using an API to Weezevent and Nemopay (cashless payment company created in the UTC)
-					        </li>
-					        <li class="purple-list">
-					            Parser and JavaScript program that analyzes data and detects inconsistencies.
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			       		<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/lbs-logo.png">
-			        		<h3 class="first-header date">2014</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align blue-text">
-			        		<span class="">Linked By Skills</span>
-			        	</div>
-			        	<div class="card-description">
-			        		The main purpose of this project was to collect information about people on LinkedIn (in particular their Skills) and create a cartography that would allow us to visualize and analyse the data more easily.
-					        <li class="blue-list">
-					            Use of a scrapper to get LinkedIn public data using Node.js
-					        </li>
-					        <li class="blue-list">
-					            Data Storage with MongoDb
-					        </li>
-					        <li class="blue-list">
-					            Dataviz' using Gephi and Sigma.js
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/web-logo.png">
-			        		<h3 class="first-header date">2014 - Today</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align yellow-text">
-			        		<span class="">Web Development</span>
-			        	</div>
-			        	<div class="card-description">
-			        		Development of several websites in the school or associative scope.
-					        <li class="yellow-list">
-					            Improved customer sales and company reputation, by providing rich stationary designs.
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/assos-logo.png">
-			        		<h3 class="first-header date">2011 - Today</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align red-text">
-			        		<span class="">Associations</span>
-			        	</div>
-			        	<div class="card-description">
-			        		Investment in the associative life of the school and occupation of several seats of responsibility.
-					        <li class="red-list">
-					            President of the student home | Team management and connection with the administration.
-					        </li>
-			        	</div>
-			        </div>
-		    	</div>
-			</div>
-			<div class="section scrollspy" id="skill-section">
-		  		<div class="full-width main-section">
-					<h1 class="header center-on-small-only">Skills</h1>
-				</div>
-				<br>
-		  		<div class="container">
-			        <div class="card">
-			       		<div class="card-header valign-wrapper">
-			        		<h3 class="first-header font-thin">Advanced</h3>
-			        	</div>
-			        	<div class="divider"></div>
-			        	<div class="row card-skill">
-					        <div class="img-wrap">
-						      <img  src="img/html5-logo.png" class="logo-skills">
-						      <h6>HTML 5</h6>
-						    </div>
-						    <div class="img-wrap">
-						      <img  src="img/css3-logo.png" class="logo-skills">
-						      <h6>CSS 3</h6>
-						    </div>
-						    <div class="img-wrap">
-								<img  src="img/javascript-logo.png" class="logo-skills">
-								<h6>JavaScript</h6>
-							</div>
-						    <div class="img-wrap">
-						      <img  src="img/sencha-logo.png" class="logo-skills">
-						      <h6>Sencha Touch</h6>
-						    </div>
-						    <div class="img-wrap">
-						      <img  src="img/bootstrap-logo.png" class="logo-skills">
-						      <h6>Bootstrap</h6>
-						    </div>
-						    <div class="img-wrap">
-								<img  src="img/oracle-logo.png" class="logo-skills">
-								<h6>Oracle</h6>
-							</div>
-							<div class="img-wrap">
-								<img  src="img/mysql-logo.png" class="logo-skills">
-								<h6>MySQL</h6>
-							</div>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<h3 class="first-header font-thin">Strong</h3>
-			        	</div>
-			        	<div class="divider"></div>
-			        	<div class="row card-skill">
-			        		<div class="img-wrap">
-								<img  src="img/linux-logo.png" class="logo-skills">
-								<h6>Linux</h6>
-							</div>
-			        		<div class="img-wrap">
-						      <img  src="img/kali-logo.png" class="logo-skills">
-						      <h6>Kali</h6>
-						    </div>
-						    <div class="img-wrap">
-						      <img  src="img/github-logo.png" class="logo-skills">
-						      <h6>Github</h6>
-						    </div>
-						    <div class="img-wrap">
-								<img  src="img/illustrator-logo.png" class="logo-skills">
-								<h6>Illustrator</h6>
-							</div>
-							<div class="img-wrap">
-								<img  src="img/materialize-logo.png" class="logo-skills">
-								<h6>Materialize</h6>
-							</div>
+						<div class="row no-margin center">
+							<p>Mother Tongue</p>
 						</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<h3 class="first-header font-thin">Experienced</h3>
-			        	</div>
-			        	<div class="divider"></div>
-			        	<div class="row card-skill">
-							<div class="img-wrap">
-								<img  src="img/php-logo.png" class="logo-skills">
-								<h6>PHP</h6>
-							</div>
-							<div class="img-wrap">
-								<img  src="img/cpp-logo.png" class="logo-skills">
-								<h6>C++</h6>
-							</div>
-							<div class="img-wrap">
-								<img  src="img/gephi-logo.png" class="logo-skills">
-								<h6>Gephi</h6>
-							</div>
-							<div class="img-wrap">
-								<img  src="img/photoshop-logo.png" class="logo-skills">
-								<h6>Photoshop</h6>
-							</div>
+					</div>
+
+					<div class="col s6 m3">
+						<div class="row no-margin center">
+							<!-- HTML Chart -->
+							<figure class="chart" data-percent="80">
+								<figcaption></figcaption>
+								<p class="english">English</p>
+								<svg width="200" height="200">
+									<circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+								</svg>
+							</figure>
 						</div>
-			        </div>
-		    	</div>
-			</div>
-			<div class="section scrollspy" id="education-section">
-		  		<div class="full-width main-section">
-					<h1 class="header center-on-small-only">Education</h1>
+						<div class="row no-margin center">
+							<p>Professional level</p>
+						</div>
+					</div>
+
+					<div class="col s6 m3">
+						<div class="row no-margin center">
+							<!-- HTML Chart -->
+							<figure class="chart" data-percent="25">
+								<figcaption></figcaption>
+								<p class="portuguese">Portuguese</p>
+								<svg width="200" height="200">
+									<circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+								</svg>
+							</figure>
+						</div>
+						<div class="row no-margin center">
+							<p>Oral and written comprehension</p>
+						</div>
+					</div>
+
+					<div class="col s6 m3">
+						<div class="row no-margin center">
+							<!-- HTML Chart -->
+							<figure class="chart" data-percent="25">
+								<figcaption></figcaption>
+								<p class="spanish">Spanish</p>
+								<svg width="200" height="200">
+									<circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+								</svg>
+							</figure>
+						</div>
+						<div class="row no-margin center">
+							<p>Oral and written comprehension</p>
+						</div>
+					</div>
 				</div>
-				<br>
-		  		<div class="container">
-			        <div class="card">
-			       		<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/utc-logo.png">
-			        		<h3 class="first-header date">2013 - Today</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align red-text">
-			        		<span class="">Computer Engineer</span>
-			        	</div>
-			        	<div class="card-description">
-					        <li class="red-list">
-					            Improved customer sales and company reputation, by providing rich stationary designs.
-					        </li>
-					        <li class="red-list">
-					            Exposed Adobe's design software to the company, by teaching the team how to affectively use Photoshop, Illustrator & InDesign.
-					        </li>
-					        <li class="red-list">
-					            Discovered a true passion for engaging customer's, inorder to provide the design that would best fit their need.
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/utc-logo.png">
-			        		<h3 class="first-header date">2011 - 2013</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align green-text">
-			        		<span class="">Prepa integree</span>
-			        	</div>
-			        	<div class="card-description">
-					        <li class="green-list">
-					            Improved customer sales and company reputation, by providing rich stationary designs.
-					        </li>
-					        <li class="green-list">
-					            Exposed Adobe's design software to the company, by teaching the team how to affectively use Photoshop, Illustrator & InDesign.
-					        </li>
-					        <li class="green-list">
-					            Discovered a true passion for engaging customer's, inorder to provide the design that would best fit their need.
-					        </li>
-			        	</div>
-			        </div>
-			        <br>
-			        <div class="card">
-			        	<div class="card-header valign-wrapper">
-			        		<img class="img-header valign" src="img/sje-logo.png">
-			        		<h3 class="first-header date">2008 - 2011</h3>
-			        	</div>
-			        	<div class="card-sub-header right-align purple-text">
-			        		<span class="">Highschool Sainte jeanne elisabeth</span>
-			        	</div>
-			        	<div class="card-description">
-					        <li class="purple-list">
-					            Improved customer sales and company reputation, by providing rich stationary designs.
-					        </li>
-					        <li class="purple-list">
-					            Exposed Adobe's design software to the company, by teaching the team how to affectively use Photoshop, Illustrator & InDesign.
-					        </li>
-					        <li class="purple-list">
-					            Discovered a true passion for engaging customer's, inorder to provide the design that would best fit their need.
-					        </li>
-			        	</div>
-			        </div>
-		    	</div>
 			</div>
-	      </div>
+			<div class="row no-margin">
+				<div class="row no-margin center">
+					<h3>Hobbies</h3>
+				</div>
+				<div class="row no-margin center">
+					<div class="col s6 m3">
+						<div class="row no-margin center">
+							<li><i class="fa fa-plane fa-9x"></i></li>
+						</div>
+						<div class="row no-margin center">
+							<p>Travel</p>
+						</div>
+					</div>
 
-    </div>
+					<div class="col s6 m3">
+						<div class="row no-margin center">
+							<li><i class="fa fa-music fa-9x"></i></li>
+						</div>
+						<div class="row no-margin center">
+							<p>Music</p>
+						</div>
+					</div>
 
-     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-	    <a class="btn-floating btn-large light-green no-border" href="mailto:vincent.laine.utc@gmail.com">
-	      <i class="large material-icons">mail</i>
-	    </a>
-	  </div>
+					<div class="col s6 m3">
+						<div class="row no-margin center">
+							<li><i class="fa fa-bicycle fa-9x"></i></li>
+						</div>
+						<div class="row no-margin center">
+							<p>Bike</p>
+						</div>
+					</div>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script>
-	  $("#main-profile").css("min-height", $(window).height());
+					<div class="col s6 m3">
+						<div class="row no-margin center">
+							<li><i class="fa fa-fort-awesome fa-9x"></i></li>
+						</div>
+						<div class="row no-margin center">
+							<p>Event Organisation</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	  $(document).ready(function(){
-	    $('.scrollspy').scrollSpy();
-	  });
-  </script>
+	<footer id="contact" class="scrollspy">
+		<div class="container">
+			<div class="row">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/vincent-lain%C3%A9-354a2b93" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+					<li><a href="mailto:vincent.laine.utc@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 
-  </body>
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/vince.js"></script>
+
+	<script src="js/arbor.js"></script>
+	<script src="js/arbor-tween.js"></script>
+	<script src="js/arbor-graphics.js"></script>
+
+	<script src="js/graph.js"></script>
+
+</body>
 </html>
