@@ -1,5 +1,5 @@
 function init(){
-	$(".header-div").css("height", ($(window).height()-120));
+	$(".header-div").css("height", ($(window).height()-$("#nav-div").height()));
 
 	if($(window).scrollTop() >= $(".header-div").height())
 		$("#nav-div").addClass("navbar-fixed");
@@ -9,13 +9,6 @@ function init(){
 	$(document).ready(function(){
 		$('.scrollspy').scrollSpy({offset: 100});
 		$('.modal-trigger').leanModal();
-
-		var left;
-		left = ($(".header-div").width()/2 - $('#header-info').width()/2);
-		console.log($(".header-div").width()/2);
-		console.log($('#header-info').width()/2);
-		console.log(left);
-		$('#header-info').css("left", left);
 
 		if($(window).width() > 1100)
 			$('.div-chart').removeClass().addClass("div-chart col s3");
@@ -29,11 +22,7 @@ function init(){
 };
 
 window.onresize = function(event) {
-	$(".header-div").css("height", ($(window).height()-120));
-
-	var left;
-	left = ($(".header-div").width()/2 - $('#header-info').width()/2);
-	$('#header-info').css("left", left);
+	$(".header-div").css("height", ($(window).height()-$("#nav-div").height()));
 
 	if($(window).width() > 1100)
 		$('.div-chart').removeClass().addClass("div-chart col s3");
