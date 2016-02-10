@@ -60,7 +60,7 @@ p, span, .node text {
 	text-shadow:none;
 }
 
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 1300px){
 	nav, nav .nav-wrapper i {
 		height: 120px;
 	}
@@ -91,6 +91,13 @@ nav a {
 
 .active {
 	color: #8bc34a;
+}
+
+@media only screen and (max-width: 1299px){
+	nav ul a {
+		font-size: 1rem;
+		line-height:64px;
+	}
 }
 
 #about, #work, #more{
