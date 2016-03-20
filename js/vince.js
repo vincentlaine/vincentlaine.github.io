@@ -38,6 +38,31 @@ window.onscroll = function () {
 	} else {
 		$("#nav-div").removeClass("navbar-fixed");
 	}
+
+	var $elem = $("#contact");
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.outerHeight(true);
+
+    if(elemTop <= docViewBottom){
+	    if((elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
+	    	$("#nav-div .hide-on-med-and-down [href='#contact']").addClass("active");
+	    	$("#nav-div .hide-on-med-and-down [href='#more']").removeClass("active");
+	    } else if(elemTop >= docViewTop){
+	    	$("#nav-div .hide-on-med-and-down [href='#more']").addClass("active");
+	    	$("#nav-div .hide-on-med-and-down [href='#contact']").removeClass("active");
+	    }
+	}
 };
+
+$("#discoverMe").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#about").offset().top - 121},
+        'slow');
+});
 
 init();

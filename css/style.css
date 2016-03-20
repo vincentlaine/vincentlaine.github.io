@@ -108,12 +108,19 @@ header .header-content {
 	font-weight: 900;
 }
 
-.btn{
+.btn, .header-btn{
 	color: #8BC34A;
 	background-color: #4C404D;
 	font-size: 20px;
 	font-weight: 800;
 	line-height: 36px;
+}
+
+.header-btn{
+	padding:0;
+	margin-bottom:30px;
+    display: inline-block;
+    padding: 0px 20px;
 }
 
 .btn:hover{
