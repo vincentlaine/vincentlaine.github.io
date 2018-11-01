@@ -1,457 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-	<title>Vincent Lainé</title>
-	<!-- Favicon -->
-	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHW/pGg1k2TUMohS3TCBP9wXoozXNfX4YwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAidLBUjGlfv82nnX/M6V+/zekev83m2j/OYxJ/xleM/8D5fr+d+36TwAAAAAAAAAAAAAAAAAAAAAAAAAAWsm0ojOzj/8myb3/K8Ky/zG2nP81rIj/N6R1/zqcYP8wgTr/E6yP/wXb/f9G5PadAAAAAAAAAAAAAAAApeffPS7BqP8e0Mz/JsvC/yrAs/8vt5z/NqyJ/zWkdP86nWD/PJZJ/yteBv8E3/r/Bs77/57s+DUAAAAAAAAAAC7Ltfod2NX/Is/I/yTKv/9HYlnzp+TWHoXJtCxPqoKkM5la/0CVSP8oZhD/CM/l/wPW/v8PwPr1AAAAAKvw6CUe2dH/Hd3a/0cmJf9VGAj/xrWrCgAAAAAAAAAAAAAAAAAAAABXpGWxK2UU/wrD1v8F0P//Csj7/6vj+RlV4dOZFuHg/04PEP9UFQj/gjsU/8GkiQIAAAAAAAAAAAAAAAAAAAAAAAAAAEBuL8oMx/T/C8n//wzH/f9cwfaLONzJuCecmP9bGQz/iEAY/4xJEfgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACt1dQQDLv6/w/A/P8Lw/3/NKD2tVDhz6NVDgz/hj8Y/41IE/+WUxP+1LaSAQAAAAAAAAAAAAAAAAAAAADS7fwBG6L18xqk+/8Wqvv/Fa/6/1eo+ZOO8esuejEU/4xHFP+XUhX/n14C/9K+my4AAAAAAAAAAAAAAABvpe8FPZf1wB+O9f8ekfj/HpT3/x2P+P+u0f0iAAAAAGwpDP2YVBX/nl0E/6doAP+rbQH+AAAAAAAAAAB/pvRTGGTz/iJy9f8hdfT/IHz1/x+B9/8aZfP8AAAAAAAAAACqg29hhEUM/6hpAf+xcgD/u4AF/8GHDP8RMMj/GjrA/x9O5f8iWPL/IV7y/yJi9P8hWPL/irL0TAAAAAAAAAAAAAAAAHhEG9COTwr/uX8F/8GIBP/GjgH/y5IJ/15Pe/8gJrz/DyPI/xkuxP8oLZD/2LMpyQAAAAAAAAAAAAAAAAAAAAAAAAAAp31Nj5pbBP+pbgT/wYkE/8yWAv/VngP/16MB/+CmAf/lrgD/58ZQhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADBnmgBsoAwmLR3Bt2/gwPiyI8C4tWcB9zcszKW79BwAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/D8AAPAPAADAAwAAwAMAAIMBAACHwQAAB+AAAAfwAAAH4AAAh8EAAIOBAADAAwAAwAMAAOAHAAD4HwAA//8AAA==" rel="icon" type="image/x-icon" />
-	<!-- CSS  -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vincent Lainé</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-	<header>
-		<div id ="home" class="header-div scrollspy">
-			<div class="header-content">
-				<h1>Vincent Lainé</h1><br>
-				<p class="header-btn">Engineer in Computer Science</p><br>
-				<a id="discoverMe" class="btn btn-primary btn-xl page-scroll">Discover Me</a>
-			</div>
-		</div>
-		<div id="nav-div">
-			<nav class="white" role="navigation">
-				<div class="nav-wrapper container">
-					<ul class="hide-on-med-and-down">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#education">Education</a></li>
-						<li><a href="#more">More</a></li>
-						<li><a href="#contact">Contact</a></li>
+<nav role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"><img src="" alt="Vincent Lainé logo"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
 
-					</ul>
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
 
-					<ul id="nav-mobile" class="side-nav">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#education">Education</a></li>
-						<li><a href="#more">More</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-				</div>
-			</nav>
-		</div>
-	</header>
+<div class="index">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m6 index-text valign-wrapper">
+                <div class="full-width">
+                    <h1 class="header center">Vincent Lainé</h1>
+                    <h5 class="header center light">IT Freelance</h5>
+                    <h3 class="header center">I love <span id="text-rotator"></span></h3>
+                </div>
+            </div>
+            <div class="col s12 m6 index-img">
+            </div>
+        </div>
+    </div>
+</div>
 
-	<section id="about" class="scrollspy">
-		<div class="row no-margin">
-			<div class="about-img no-padding col s12 m5 l3">
-				<img src="img/me.jpg"/>
-			</div>
-			<div class="col s12 m7 l9 about-content">
-				<div class="about-heading">
-					<h2>About me</h2>
-				</div>
-				<h3>Vincent Lainé</h3>
-				<h4>Computer Engineer from France</h4>
-				<span>
-					<p>I am currently CTO of Bottomatik, a startup in the ChatBots field.</p>
-					<p>I am a reactive and ambitious person who likes fully investing myself in projects to make improvements. I have developed with my projects (schools or associations) a mature and responsible approach to challenges and problems.</p>
-					<p>I like to have a global approach of the projet and work in team to reach our goals in time.</p>
-				</span>
-				<a href="CV_e.pdf" class="cv-btn" download="CV_Vincent_Lainé.pdf">Download Printable Resume</a>
-			</div>
-		</div>
-	</section>
+<div class="container">
+    <div class="section">
+        <h2 class="center-align">About me</h2>
+        <p class="center-align">
+            By utilizing elements and principles of Material Design, we were able to create a
+            framework that incorporates components and animations that provide more feedback to users.
+            Additionally, a single underlying responsive system across all platforms allow for a more
+            unified user experience.
+        </p>
+    </div>
+</div>
 
-	<section id="skills" class="scrollspy">
-		<div class="container full-width">
-			<div class="center skills-heading">
-				<h2>My skills</h2>
-			</div>
-			<canvas id="sitemap" width="800" height="400"></canvas>
-		</div>
-	</section>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m6 webapp-img">
+            </div>
+            <div class="col s12 m6 webapp-text valign-wrapper">
+                <div>
+                    <h2>Web apps</h2>
+                    <p>
+                        By utilizing elements and principles of Material Design, we were able to create a
+                        framework that incorporates components and animations that provide more feedback to users.
+                        Additionally, a single underlying responsive system across all platforms allow for a more
+                        unified user experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<section id="work" class="scrollspy">
-		<div class="container">
-			<div class="center work-heading">
-				<h2>Work Experience</h2>
-			</div>
-		</div>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m6 chatbot-text valign-wrapper">
+                <div>
+                    <h2>Chatbots</h2>
+                    <p>
+                        By utilizing elements and principles of Material Design, we were able to create a
+                        framework that incorporates components and animations that provide more feedback to users.
+                        Additionally, a single underlying responsive system across all platforms allow for a more
+                        unified user experience.
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m6 chatbot-img">
+            </div>
+        </div>
+    </div>
+</div>
 
-		<div id="cd-timeline" class="cd-container">
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img big cd-picture valign-wrapper">
-					<img src="img/bottomatik-logo.png" alt="Picture">
-				</div> <!-- cd-timeline-img -->
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m6 other-img">
+            </div>
+            <div class="col s12 m6 other-text valign-wrapper">
+                <div>
+                    <h2>IT projects</h2>
+                    <p>
+                        By utilizing elements and principles of Material Design, we were able to create a
+                        framework that incorporates components and animations that provide more feedback to users.
+                        Additionally, a single underlying responsive system across all platforms allow for a more
+                        unified user experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-				<div id="block1" class="card-panel cd-timeline-content">
-					<h2>Bottomatik (CTO)</h2>
-					<p>Working on chatbot field<br>
-						- Development of a bot framework for Facebook Messenger, Telegram, Web (Node.JS)<br>
-						- Development of a Web App for the administration of the bots (AngularJS, Angular)<br>
-						- Network & Monitoring servers<br>
-						- DevOps</p>
-					<span class="cd-date">Feb 2017 - ?</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
+<div class="gallery">
+    <div class="section">
+        <h2 class="center-align">Gallery</h2>
+        <div class="galleryRow">
+            <div class="galleryColumn">
+                <div class="ItemCard">
+                    <a class="ItemCard__dest galleryCover"
+                       href="https://elements.envato.com/items/type/fonts/herbert-lemuel-GHH8KT" target="_blank"></a>
+                    <figure class="ItemCard__thumb">
+                        <img src="./img/tmp_img.jpg" height="340" width="510" alt="">
+                        <span class="galleryShadow galleryCover"></span>
+                    </figure>
+                </div>
+            </div>
+            <div class="galleryColumn">
+                <div class="ItemCard">
+                    <a class="ItemCard__dest galleryCover"
+                       href="https://elements.envato.com/items/type/add-ons/roller-paint-brush-EZ9ZVZ"
+                       target="_blank"></a>
+                    <figure class="ItemCard__thumb">
+                        <img src="./img/tmp_img.jpg" height="340" width="510" alt="">
+                        <span class="galleryShadow galleryCover"></span>
+                    </figure>
+                </div>
+            </div>
+            <div class="galleryColumn">
+                <div class="ItemCard">
+                    <a class="ItemCard__dest galleryCover"
+                       href="https://elements.envato.com/items/type/add-ons/roller-paint-brush-EZ9ZVZ"
+                       target="_blank"></a>
+                    <figure class="ItemCard__thumb">
+                        <img src="./img/tmp_img.jpg" height="340" width="510" alt="">
+                        <span class="galleryShadow galleryCover"></span>
+                    </figure>
+                </div>
+            </div>
+            <div class="galleryColumn">
+                <div class="ItemCard">
+                    <a class="ItemCard__dest galleryCover"
+                       href="https://elements.envato.com/items/type/add-ons/roller-paint-brush-EZ9ZVZ"
+                       target="_blank"></a>
+                    <figure class="ItemCard__thumb">
+                        <img src="./img/tmp_img.jpg" height="340" width="510" alt="">
+                        <span class="galleryShadow galleryCover"></span>
+                    </figure>
+                </div>
+            </div>
+            <div class="galleryColumn">
+                <div class="ItemCard">
+                    <a class="ItemCard__dest galleryCover"
+                       href="https://elements.envato.com/items/type/add-ons/roller-paint-brush-EZ9ZVZ"
+                       target="_blank"></a>
+                    <figure class="ItemCard__thumb">
+                        <img src="./img/tmp_img.jpg" height="340" width="510" alt="">
+                        <span class="galleryShadow galleryCover"></span>
+                    </figure>
+                </div>
+            </div>
+            <div class="galleryColumn">
+                <div class="ItemCard">
+                    <a class="ItemCard__dest galleryCover"
+                       href="https://elements.envato.com/items/type/add-ons/roller-paint-brush-EZ9ZVZ"
+                       target="_blank"></a>
+                    <figure class="ItemCard__thumb">
+                        <img src="./img/tmp_img.jpg" height="340" width="510" alt="">
+                        <span class="galleryShadow galleryCover"></span>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img big cd-picture valign-wrapper">
-					<img src="img/logo-sqli.jpg" alt="Picture">
-				</div> <!-- cd-timeline-img -->
+<div class="container">
+    <div class="section">
+        <h2 class="center-align">Keep in touch</h2>
+        <p class="center-align">
+            By utilizing elements and principles of Material Design, we were able to create a
+            framework that incorporates components and animations that provide more feedback to users.
+            Additionally, a single underlying responsive system across all platforms allow for a more
+            unified user experience.
+        </p>
+    </div>
+</div>
 
-				<div class="card-panel cd-timeline-content">
-					<h2>SQLI (Computer Science Engineer)</h2>
-					<p>Working on Iot Field<br>
-						- Use of Watson IoT, MQTT brokers, Node-RED to collect data from sensors, process it and trigger actions for external platforms based on these data<br><br>
-						Working on a wep app connected to IBM Maximo via its REST API<br>
-						- Front-end in Angular 4 (HTML / CSS / JavaScript / TypeScript)<br>
-						- Back-End in Java</p>
-					<span class="cd-date">Sept 2016 - Sept 2017</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
+<div class="footer">
+    <div class="container">
+        Made by Vincent Lainé
+    </div>
+    <div class="container">
+        Credits : Blablabla freepik
+    </div>
+</div>
 
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-picture valign-wrapper">
-					<img src="img/logoDecodd.png" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="card-panel cd-timeline-content">
-					<h2>Decodd</h2>
-					<p>Development of a decision tool for the calculation of sports bets odds<br> 
-						- Database management (oracle SQL), server (C ++), development of human machine interface (Java).<br>
-						- Development of a mobile version of the tool using a javascript framework (ExtJS / Sencha Touch), php and mysql.</p>
-					<span class="cd-date">Feb - Jul 2015</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img big cd-picture valign-wrapper">
-					<img src="img/utc-logo.png" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="card-panel cd-timeline-content">
-					<h2>UTC</h2>
-					<p>Development of a web tool for the INSEP (National Institute of Sport and Physical Education)<br>
-						- Database management (mySQL)<br>
-						- Web technologies (HTML, PHP, JavaScript, AJAX, CSS)</p>
-					<span class="cd-date">Feb 2016</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img big cd-movie valign-wrapper">
-					<img src="img/logoUTE.png" alt="Movie">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="card-panel cd-timeline-content">
-					<h2>UTE Norte Fluminense</h2>
-					<p>Communication in a Brazilian company with several subsidiaries. This company is based on Rio de Janeiro, Brasil<br>
-						- Translation of mails from Brazilian to English.<br>
-						- Communication with the parent company, EDF.</p>
-					<span class="cd-date">Jul 2012</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img big cd-picture valign-wrapper">
-					<img src="img/logoEdf.png" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="card-panel cd-timeline-content">
-					<h2>EDF</h2>
-					<p>Summer Job in EDF at the Malakoff office (near Paris)<br>
-						- Realisations of facilities plans for the future Flamanville nuclear power plant.<br>
-						- Data checks between EDF and Areva.</p>
-					<span class="cd-date">Jul 2011</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
-		</div> <!-- cd-timeline -->
-	</section>
-
-	<section id ="projects" class="scrollspy">
-		<div class="container">
-			<div class="center projects-heading">
-				<h2>My projects</h2>
-			</div>
-			<div class="row">
-				<div class="col s12 m6 l4">
-					<figure class="wpf-demo-6">
-						<img class="responsive-img" src="img/linkedbyskills.jpg">
-						<a href="#linkedbyskills" class="modal-trigger"><figcaption class="view-caption center">
-							<h4>LinkedBySkills</h4> 
-							<span class="fa fa-plus fa-2x"></span>
-						</figcaption></a>
-					</figure>
-				</div>
-
-				<!-- Modal Structure -->
-				<div id="linkedbyskills" class="modal">
-					<div class="modal-content">
-						<h4>LinkedBySkills</h4>
-						<p>The main purpose of this project was to collect information about people on LinkedIn (in particular their Skills) and create a cartography that would allow us to visualize and analyse the data more easily.<br>
-						-Use of a scrapper to get LinkedIn public data using Node.js<br>
-						-Data Storage with MongoDb<br>
-						-Dataviz' using Gephi and Sigma.js</p>
-						<img class="responsive-img" src="img/linkedbyskills.jpg">
-						<img class="responsive-img" src="img/linkedbyskills2.jpg">
-					</div>
-				</div>
-
-				<div class="col s12 m6 l4">
-					<figure class="wpf-demo-6">
-						<img class="responsive-img" src="img/pic.jpg">
-						<a href="#picasso" class="modal-trigger"><figcaption class="view-caption center">
-							<h4>Websites</h4> 
-							<span class="fa fa-plus fa-2x"></span>
-						</figcaption></a>
-					</figure>
-				</div>
-
-				<!-- Modal Structure -->
-				<div id="picasso" class="modal">
-					<div class="modal-content">
-						<h4>Websites</h4>
-						<p>For association or school projects I had the chance to developp several websites and use many web technologies.<br>
-						<b>Pic'Asso</b> (the student home) - <b>webTV</b><br>
-						Development of a web TV for the student home which has 3 TVs. Each TV has a Raspberry Pi connect to it with a custom OS which connect itself to a web page when the rasp is On and declare its ID to the server.<br>
-						The server is powered by Node JS and works with web sockets which permits to do near Real Time.<br>
-						The TVs are controlled through an admin web page. We can launch youtube vidéos or playlist and activate / desactivate a message banner to spread news continuously.<br>
-						<b>Pic'Asso</b> (the student home) - <b>tracking</b><br>
-						Development of a web tool to detect fraud of the students to our students office.<br>
-						- Development of the algorithm to detect fraud<br>
-						- Using an API to Weezevent / Nemopay (cashless payment company created in the UTC)<br>
-						- Parser and JavaScript program that analyzes data and detects inconsistencies.<br>
-						<b>Nuit Fauve / Pic'Asso</b> - <b>web site</b><br>
-						Development of websites for several school associations. Use of HTML, PHP, CSS, JavaScript for many of them with several JS libraries and frameworks (JQuery). Deployment of a private open-source cloud for biology researchers.</p>
-						<img class="responsive-img" src="img/pic.jpg">
-						<img class="responsive-img" src="img/nf.jpg">
-					</div>
-				</div>
-
-				<div class="col s12 m6 l4">
-					<figure class="wpf-demo-6">
-						<img class="responsive-img" src="img/others.jpg">
-						<a href="#other" class="modal-trigger"><figcaption class="view-caption center">
-							<h4>Others</h4> 
-							<span class="fa fa-plus fa-2x"></span>
-						</figcaption></a>
-					</figure>
-				</div>
-
-				<!-- Modal Structure -->
-				<div id="other" class="modal">
-					<div class="modal-content">
-						<h4>Others</h4>
-						<p>During my scholarity I developp several applications for school projects. Some used languages : C, C++, Java ,TC/Tkl.<br>
-						In addition to technical skills I also have strong abilities in algorithms, network and security, optimization. Moreother I also have some renewable energy notions related to my strong attraction to the smart-cities.</p>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section id="education" class="scrollspy">
-		<div class="container">
-			<div class="center education-heading">
-				<h2>Education</h2>
-			</div>
-		</div>
-
-		<div id="cd-timeline" class="cd-container">
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img big cd-picture valign-wrapper">
-					<img src="img/utc-logo.png" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="card-panel cd-timeline-content">
-					<h2>UTC</h2>
-					<p>Engineering school in Compiegne, France. General formation from 2011 to 2013 and Computer Science since 2013 with speciality in Network & Smart-cities.</p>
-					<span class="cd-date">2011 - 2017</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img big cd-movie valign-wrapper">
-					<img src="img/kadir-logo.png" alt="Movie">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="card-panel cd-timeline-content">
-					<h2>Kadir Has University</h2>
-					<p>Erasmus semester in Instanbul, Turkey, at Kadir Has University in Computer Science.</p>
-					<span class="cd-date">Feb - Jun 2016</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
-
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img big cd-picture valign-wrapper">
-					<img src="img/sje-logo.png" alt="Picture">
-				</div> <!-- cd-timeline-img -->
-
-				<div class="card-panel cd-timeline-content">
-					<h2>Sainte Jeanne Elisabeth</h2>
-					<p>Highschool scientific degree.</p>
-					<span class="cd-date">2008 - 2011</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
-		</div> <!-- cd-timeline -->
-	</section>
-
-	<section id="more" class="scrollspy">
-		<div class="container">
-			<div class="center other-heading">
-				<h2>Other Stuff</h2>
-			</div>
-
-			<div class="row no-margin">
-				<div class="row no-margin center">
-					<h3>Languages</h3>
-				</div>
-				<div class="row no-margin center">
-					<div class="div-chart col s12">
-						<div class="row no-margin center">
-							<!-- HTML Chart -->
-							<figure class="chart" data-percent="100">
-								<figcaption></figcaption>
-								<p class="french">French</p>
-								<svg width="200" height="200">
-									<circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-								</svg>
-							</figure>
-						</div>
-						<div class="row no-margin center">
-							<p>Mother Tongue</p>
-						</div>
-					</div>
-
-					<div class="div-chart col s12">
-						<div class="row no-margin center">
-							<!-- HTML Chart -->
-							<figure class="chart" data-percent="80">
-								<figcaption></figcaption>
-								<p class="english">English</p>
-								<svg width="200" height="200">
-									<circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-								</svg>
-							</figure>
-						</div>
-						<div class="row no-margin center">
-							<p>Professional level</p>
-						</div>
-					</div>
-
-					<div class="div-chart col s12">
-						<div class="row no-margin center">
-							<!-- HTML Chart -->
-							<figure class="chart" data-percent="25">
-								<figcaption></figcaption>
-								<p class="portuguese">Portuguese</p>
-								<svg width="200" height="200">
-									<circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-								</svg>
-							</figure>
-						</div>
-						<div class="row no-margin center">
-							<p>Oral and written comprehension</p>
-						</div>
-					</div>
-
-					<div class="div-chart col s12">
-						<div class="row no-margin center">
-							<!-- HTML Chart -->
-							<figure class="chart" data-percent="25">
-								<figcaption></figcaption>
-								<p class="spanish">Spanish</p>
-								<svg width="200" height="200">
-									<circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-								</svg>
-							</figure>
-						</div>
-						<div class="row no-margin center">
-							<p>Oral and written comprehension</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row no-margin">
-				<div class="row no-margin center">
-					<h3>Hobbies</h3>
-				</div>
-				<div class="row no-margin center">
-					<div class="div-chart col s12">
-						<div class="row no-margin center">
-							<li><i class="fa fa-plane fa-9x"></i></li>
-						</div>
-						<div class="row no-margin center">
-							<p>Travel</p>
-						</div>
-					</div>
-
-					<div class="div-chart col s12">
-						<div class="row no-margin center">
-							<li><i class="fa fa-music fa-9x"></i></li>
-						</div>
-						<div class="row no-margin center">
-							<p>Music</p>
-						</div>
-					</div>
-
-					<div class="div-chart col s12">
-						<div class="row no-margin center">
-							<li><i class="fa fa-bicycle fa-9x"></i></li>
-						</div>
-						<div class="row no-margin center">
-							<p>Bike</p>
-						</div>
-					</div>
-
-					<div class="div-chart col s12">
-						<div class="row no-margin center">
-							<li><i class="fa fa-fort-awesome fa-9x"></i></li>
-						</div>
-						<div class="row no-margin center">
-							<p>Event Organisation</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer id="contact" class="scrollspy">
-		<div class="container">
-			<div class="row">
-				<ul>
-					<li><a href="https://www.linkedin.com/in/vincent-lain%C3%A9-354a2b93" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-					<li><a href="mailto:vincent@laine.xyz" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-
-	<!--  Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/materialize.js"></script>
-	<script src="js/vince.js"></script>
-
-	<script src="js/arbor.js"></script>
-	<script src="js/arbor-tween.js"></script>
-	<script src="js/arbor-graphics.js"></script>
-
-	<script src="js/graph.js"></script>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/typer.min.js"></script>
 
 </body>
 </html>
